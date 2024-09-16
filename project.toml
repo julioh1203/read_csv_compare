@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Comprare CSV Reader"
+version = "0.1.0"
+description = "git"
+authors = [
+    { name = "Julio Oliveira", email = "julio@octaltecnologia.com.br" }
+]
+dependencies = [
+    "pandas==2.2.2",
+    "faker==28.4.1",
+    "rich==13.8.1",
+    "black==23.9.1"
+]
+
+[tool.setuptools]
+packages = ["your_package_name"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
